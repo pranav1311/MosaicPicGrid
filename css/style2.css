@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+h1 {
+    margin: 5px;
+}
+
+img3 {
+    border-radius: 2.5px;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: flex;
+}
+
+.grid-col {
+    flex: 14px;
+    padding: 50px;
+}
+
+.grid-col--2,
+.grid-col--3 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        margin: 3px 0;
+    }
+    .grid-col--2 {
+        display: block;
+    }
+    .grid-col {
+        padding: 5px;
+    }
+    img {
+        margin-bottom: 3px;
+    }
+    .grid-item:hover {
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1080px) {
+    .grid-col--3 {
+        display: block;
+    }
+    .container {
+        width: 80%;
+    }
+    h1 {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

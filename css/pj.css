@@ -1,0 +1,238 @@
+@import'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+@font-face {
+    font-family: "StupidMeeting";
+    src: url("fonts/StupidMeeting.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Allan Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Allan-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "RichieBrusher";
+    src: url("fonts/RichieBrusher.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "kalam";
+    src: url("fonts/kalam.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "pmark";
+    src: url("fonts/pmark.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "nycd";
+    src: url("fonts/nycd.ttf") format("truetype");
+}
+
+@supports not(-webkit-text-stroke: 2px red) {
+    a:hover {
+        text-shadow: 3px 3px 0 var(--mainColor), -1px -1px 0 var(--mainColor), 1px -1px 0 var(--mainColor), -1px 1px 0 var(--mainColor), 1px 1px 0 var(--mainColor);
+    }
+}
+
+mainsite {
+    position: relative;
+    margin-left: 100px;
+}
+
+.body2 {
+    position: relative;
+    margin: 40px 20px 10px 340px;
+    font-family: Arial;
+    display: inline;
+}
+
+.sidebar {
+    margin-left: -200px;
+    float: left;
+    width: 200px;
+    height: 100%;
+    background: white;
+    transition: 0.5s ease-in-out;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.side {
+    margin: 0px;
+}
+
+.btn {
+    float: left;
+    font-family: Ionicons;
+}
+
+.btn:before {
+    content: '\f20d';
+}
+
+.btnc:before {
+    content: '\f12a';
+}
+
+
+}
+
+/*set f2ca for back icon*/
+ul {
+    margin: 1em 0;
+    padding: 0 0 0 40px
+}
+#control_bar {
+    position: fixed;
+    padding-top: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+    z-index: 3;
+    -webkit-transition: top .5s linear;
+    -moz-transition: top .5s linear;
+    -o-transition: top .5s linear;
+    transition: top .5s linear
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: static;
+}
+li2 {
+    float: left;
+    position: relative;
+}
+li a {
+    display: inline;
+    padding: 8px;
+    position: relative;
+}
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.grid-item {
+    width: 25%;
+}
+.grid-item--width2 {
+    width: 50%;
+}
+.img2 {
+    position: relative;
+    top: 30px;
+    left: 10px;
+    border-radius: 50%;
+    margin: 40px;
+    padding: 20px;
+}
+.navpj a {
+    color: var(--mainColor);
+    text-decoration: none;
+    float: right;
+    color: orange;
+    text-align: center;
+    padding: 14px 5px;
+    top: 0px;
+}
+.navpj a:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--mainColor);
+}
+@supports not(-webkit-text-stroke: 2px red) {
+    a:hover {
+        text-shadow: 3px 3px 0 var(--mainColor), -1px -1px 0 var(--mainColor), 1px -1px 0 var(--mainColor), -1px 1px 0 var(--mainColor), 1px 1px 0 var(--mainColor);
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
