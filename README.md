@@ -11,7 +11,7 @@
 <br>
 
 <div>
-  <img src="./img.gif" alt="transition_image_website>
+  <img src="ezgif.com-gif-maker.gif" alt="transition_image_website>
 </div>
 
 
