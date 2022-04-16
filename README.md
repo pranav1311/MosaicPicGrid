@@ -8,10 +8,7 @@
 
 ### Brief overview of website transition on filtering can be seen as below :
 
-<br>
++<img src="https://github.com/pranav1311/MosaicPicGrid/blob/main/ezgif.com-gif-maker.gif?raw=true" width="1000px" height="500px">
 
-<div>
-  <img src="ezgif.com-gif-maker.gif" alt="transition_image_website>
-</div>
 
 
